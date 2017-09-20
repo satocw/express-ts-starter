@@ -5,6 +5,8 @@ import * as http from 'http';
 
 import { IndexApi } from "./api/index";
 
+const PORT = 3000;
+
 class Server {
 
     public app: express.Application;
@@ -25,7 +27,7 @@ class Server {
     }
 
     private config() {
-        this.app.set("port", 3000);
+        this.app.set("port", PORT);
 
         this.app.use(express.static(path.join(__dirname, "public")));
 
@@ -45,7 +47,7 @@ class Server {
     public static start() {
         const server = new Server();
         const httpServer = http.createServer(server.app)
-        httpServer.listen(3000);
+        httpServer.listen(PORT);
         httpServer.on("listening", () => { console.log('Server started...') });
     }
 }
