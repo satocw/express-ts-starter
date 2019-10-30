@@ -1,12 +1,16 @@
 import { Request, Response } from "express";
 
-const GetIndex = (req: Request, res: Response) => {
-  res.send("Get Index OK");
+const GetGp = (req: Request, res: Response) => {
+  res.render('gp');
+};
+const GetGpOld = (req: Request, res: Response) => {
+  res.render('gp_old');
+};
+const GetComm = (req: Request, res: Response) => {
+  res.render('comm');
+};
+const GetCommOld = (req: Request, res: Response) => {
+  res.render('comm_old');
 };
 
-const GetQuery = (req: Request, res: Response) => {
-  const params = req.query;
-  res.send("Get Query: " + JSON.stringify(params));
-};
-
-export { GetIndex, GetQuery };
+export { GetGp, GetGpOld, GetComm, GetCommOld };

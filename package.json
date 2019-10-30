@@ -1,5 +1,5 @@
 {
-  "name": "express-ts-starter",
+  "name": "download-site-style-image",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,13 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "pug": "^2.0.3"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/express": "^4.16.1",
-    "typescript": "^3.3.3333"
+    "@types/body-parser": "^1.17.1",
+    "@types/express": "^4.17.1",
+    "@types/request": "^2.48.3",
+    "typescript": "^3.6.4"
   }
 }

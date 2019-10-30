@@ -1,0 +1,101 @@
+.table-container {
+  height:165px;
+  /* height:210px; */
+  overflow-y:auto;
+  margin:16px 0;
+}
+
+.product tbody tr:hover {
+  background: aliceblue;
+}
+
+.product .table.is-striped tbody tr:not(.is-selected):nth-child(even):hover {
+  background: aliceblue;
+}
+
+.product tbody td a {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  display: block;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.product .product_menu li {
+  margin: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.download-hero {
+  margin-bottom: 2em;
+}
+
+.download-hero .download-version-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.download-hero ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+
+  border-bottom: 2px solid #22408d;
+}
+
+.download-hero li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.download-hero .download-version-toggle a.is-version {
+  color: #eaf5e9;
+  background: #23408e;
+}
+
+.download-hero .download-version-toggle a:hover, .download-hero .download-version-toggle a:active, .download-hero .download-version-toggle a.is-version {
+  color: #fff;
+  background: #23408e;
+}
+
+.download-hero .download-version-toggle a {
+  border-radius: 0;
+  padding: 5px 2px;
+}
+
+.download-hero a {
+  display: block;
+  width: 100%;
+  padding-top: 1em;
+  color: #333;
+  background: #d5e1fe;
+}
+
+.download-hero .download-version-toggle .title {
+  font-size: 1.5em;
+}
+
+a, a:link, a:active {
+  text-decoration: none;
+}
